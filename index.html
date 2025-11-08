@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="it" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mood Diary - Il tuo Diario</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        darkMode: 'media', // Sync with OS preference
+        theme: {
+          extend: {
+            colors: {
+              'light-bg': '#C4D8A7', // Light Sage Green
+              'dark-bg': '#2A3C24',  // Dark Forest Green
+              'light-card': '#F9E5A2', // Sunny Yellow
+              'dark-card': '#5A4A2C', // Dark Mustard
+              'light-text': '#4A332D', // Dark Brown
+              'dark-text': '#E0D8CC', // Light Beige
+              'subtle-light': '#8E735F', // Muted Brown
+              'subtle-dark': '#B3A193', // Lighter Muted Brown
+              'accent': '#DD8C4E', // Terracotta Orange
+              'accent-hover': '#C77A40', // Darker Orange
+              'border-light': '#A4B889',
+              'border-dark': '#3F5239',
+              'paper': '#fdfaf2', // A creamy paper color
+              'dark-paper': '#2c2a24', // Dark version of paper
+              'paper-lines': '#e0e8f4', // Soft blue lines
+              'dark-paper-lines': '#4a5568', // Darker lines for dark mode
+            },
+            fontFamily: {
+              sans: ['Nunito', 'sans-serif'],
+              handwriting: ['Caveat', 'cursive'],
+            },
+            backgroundSize: {
+              'paper-lines': '100% 2.5rem'
+            }
+          }
+        }
+      }
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;700&family=Nunito:wght@400;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+  <script type="importmap">
+{
+  "imports": {
+    "react": "https://aistudiocdn.com/react@^19.2.0",
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/",
+    "react/": "https://aistudiocdn.com/react@^19.2.0/",
+    "react-router-dom": "https://aistudiocdn.com/react-router-dom@^7.9.5",
+    "framer-motion": "https://aistudiocdn.com/framer-motion@^11.3.19"
+  }
+}
+</script>
+</head>
+  <body class="bg-light-bg dark:bg-dark-bg text-light-text dark:text-dark-text antialiased">
+    <div id="root"></div>
+    <script type="module" src="/index.tsx"></script>
+  </body>
+</html>
